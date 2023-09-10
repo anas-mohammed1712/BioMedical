@@ -1,0 +1,160 @@
+body{
+    /* background-color: #c0c0c0; */
+}
+*{
+  box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.space-between{
+    width: 100%;
+    height: 70px;
+}
+
+.sss{
+    width: 50%;
+
+}
+.quiz-container{
+  background-color: #33626;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+  margin: 60px auto;
+}
+@media (max-width:727px){
+  .quiz-container{
+    width:300px;
+    border:4px solid #3399ff;border-radius:15px;
+  }
+}
+.quiz-header{
+  padding: 2rem;
+}
+.quiz-container h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.quiz-container ul{
+  list-style-type: none;
+  padding: 0;
+}
+.quiz-container ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.quiz-container ul li label{
+  cursor: pointer;
+}
+.quiz-container button{
+  background-color: #3399ff;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+.quiz-container button:hover{
+  background-color: #04adc4;
+}
+.quiz-container button:focus{
+  outline: none;
+  background-color: #44b927;
+}
+
+.haika{
+  width:300px;
+  height: 450px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-right: 15px;
+  border: 2px solid #3399ff
+}
+
+
+
+.haika img{
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
+}
+.nn{
+  padding: 0 auto;
+}
+.tt{
+  width:300px;
+  height:450px;
+  border: 3px solid #3399ff;
+  margin: 30px 10px;
+  text-align:center;
+  border-radius: 25px;
+  overflow-y: scroll;
+
+}
+.tt h3{
+  margin: 0 20px;
+  padding: 10px;
+
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #99ff;
+  border-radius: 15px;
+  height: 20%;
+}
+.backg{
+  height: 60vh;
+  width: 100%;
+
+}
+.backg::before{
+  content: "";
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  background-color: #0099ff;
+  left: 50%;
+  top: 50%;
+  transform: translatex(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  z-index: -1;
+  animation: waving 3s ease-in-out infinite alternate;
+}
+@keyframes waving {
+  from{
+      transform: translatex(-50%) skew(0, -10deg);
+  }
+    to{
+        transform: translatex(-30%) skew(10deg, 0);
+    }
+
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.space-mobile{
+  height: 200px; display: none;
+}
+
+@media (max-width:991.20px){
+  .space-mobile{
+    display: block;
+  }
+}
